@@ -25,7 +25,7 @@ The files have different update schedules and an archive of each dataset is prov
 
 1. The GEBCO Gazeteer is rarely updated. The raw data file from 2017-12-29 is the latest file. Call using `underwater::gebco()`. 
 2. The Interridge database is updated infrequently. An archive version can be loaded using `underwater::vents()`. The latest version can be imported with `import_vents()`.
-3. The Geonames data is taken from the data export dump and is updated daily. A reference set from 2018-01-01 is provided with the package. 
+3. The Geonames data is taken from the `allCountries.txt` file [data export dump](http://download.geonames.org/export/dump/) under code U. The geonames export files are updated daily. A reference set from 2018-01-01 is provided with the package. 
 
 The raw data is not provided in a form that makes text mining easy. The data is not tidy and may contain punctuation or concatenation of names. Alternate names may also be provided. To facilitate work with the data for text mining using a tidy text mining approach the data is tidied and all tidying steps are documented. You may of course always use the raw data files in the archive or direct from the source. 
 
