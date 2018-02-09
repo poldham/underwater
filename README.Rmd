@@ -1,0 +1,46 @@
+---
+title: "README"
+author: "Paul Oldham"
+date: "08/01/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The underwater R data package brings together datasets for submerged geographic features and place names that are presently dispersed. The aim of the package is to facilitate mapping and text mining of scientific and other literature for underwater features and place names using a tidy approach. 
+
+The package aims to assist researchers seeking to contribute to the evidence base for negotiations of a new international treaty on marine biodiversity in Areas Beyond National Jurisdiction (ABNJ) under the United Nations General Assembly. The package was written as part of the BIOSPOLAR project supported by the Norwegian Research Council. 
+
+The package provides open access datasets for named underwater places from:
+
+1. The [GEBCO Gazeteer](https://www.gebco.net/data_and_products/undersea_feature_names/)
+2. The [Interridge Hydrothermal Vents Database](https://vents-data.interridge.org/)
+3. Underwater features from the [Geonames database](http://www.geonames.org/export/) coded U for Undersea
+
+Raw data files are located in data-raw. 
+
+The files have different update schedules and an archive of each dataset is provided in `/data` and can be called with the package. 
+
+1. The GEBCO Gazeteer is rarely updated. The raw data file from 2017-12-29 is the latest file. Call using `underwater::gebco()`. 
+2. The Interridge database is updated infrequently. An archive version can be loaded using `underwater::vents()`. The latest version can be imported with `import_vents()`.
+3. The Geonames data is taken from the data export dump and is updated daily. A reference set from 2018-01-01 is provided with the package. 
+
+The raw data is not provided in a form that makes text mining easy. The data is not tidy and may contain punctuation or concatenation of names. Alternate names may also be provided. To facilitate work with the data for text mining using a tidy text mining approach the data is tidied and all tidying steps are documented. You may of course always use the raw data files in the archive or direct from the source. 
+
+If you know of an open access dataset that could be added to aid in underwater mapping projects please raise an issue or make a pull request.
+
+### Other R packages dealing with Ocean data
+
+`robis` for taxonomic data from the Ocean Biogeographic Information System
+`oce` for working with instrument data and a variety of mapping functions
+`oceanview` for visualizing complex oceanographic data
+`oceanmap` A toolbox for plotting 2D oceanographic data
+`rnaturalearth` A package to facilitate interaction with natural earth map data
+`rnaturalearthdata` World Vector Map Data from Natural Earch used in rnaturalearth
+
+### Other data sources
+
+[Marineregions.org](http://www.marineregions.org/downloads.php) brings together a lot of GIS datasets (such as maritime boundaries) that can use useful for mapping in R and other tools. 
+
