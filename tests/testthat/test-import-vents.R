@@ -12,6 +12,7 @@ context("import_vents_function")
 
 test_that("import_vents adds time column matching Sys.Date", {
   date <- Sys.Date()
+  import_vents()
   date_vents <- vents$download_date[1]
   expect_identical(date, date_vents)
 })
