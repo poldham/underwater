@@ -33,12 +33,12 @@ If you know of an open access dataset that could be added to aid in underwater m
 
 ### Other R packages dealing with Ocean data
 
-`robis` for taxonomic data from the Ocean Biogeographic Information System
-`oce` for working with instrument data and a variety of mapping functions
-`oceanview` for visualizing complex oceanographic data
-`oceanmap` A toolbox for plotting 2D oceanographic data
-`rnaturalearth` A package to facilitate interaction with natural earth map data
-`rnaturalearthdata` World Vector Map Data from Natural Earch used in rnaturalearth
+- `robis` for taxonomic data from the Ocean Biogeographic Information System
+- `oce` for working with instrument data and a variety of mapping functions
+- `oceanview` for visualizing complex oceanographic data
+- `oceanmap` A toolbox for plotting 2D oceanographic data
+- `rnaturalearth` A package to facilitate interaction with natural earth map data
+- `rnaturalearthdata` World Vector Map Data from Natural Earch used in rnaturalearth
 
 ### Other data sources
 
