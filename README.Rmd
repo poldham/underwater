@@ -8,10 +8,8 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-[![Travis-CI Build Status](https://travis-ci.org/poldham/lensr.svg?branch=master)](https://travis-ci.org/poldham/lensr)
-[![codecov.io](https://codecov.io/github/poldham/lensr/coverage.svg?branch=master)](https://codecov.io/github/poldham/lensr?branch=master)
-
-
+[![Travis-CI Build Status](https://travis-ci.org/poldham/underwater.svg?branch=master)](https://travis-ci.org/poldham/underwater)
+[![codecov.io](https://codecov.io/github/poldham/underwater/coverage.svg?branch=master)](https://codecov.io/github/poldham/underwater?branch=master)
 
 The underwater R data package brings together datasets for submerged geographic features and place names that are presently dispersed. The aim of the package is to facilitate mapping and text mining of scientific and other literature for underwater features and place names using a tidy approach. 
 
