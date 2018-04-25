@@ -9,15 +9,9 @@ output: html_document
 [![codecov](https://codecov.io/gh/poldham/underwater/branch/master/graph/badge.svg)](https://codecov.io/gh/poldham/underwater)
  
 ---
- 
-[![minimal R version](https://img.shields.io/badge/R%3E%3D-NA-6666ff.svg)](https://cran.r-project.org/)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/underwater)](https://cran.r-project.org/package=underwater)
 [![packageversion](https://img.shields.io/badge/Package%20version-0.1.0-orange.svg?style=flat-square)](commits/master)
- 
----
- 
-[![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](/commits/master)
-
+"[![minimal R version](https://img.shields.io/badge/R%3E%3D-3.0.3-6666ff.svg)](https://cran.r-project.org/)"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
