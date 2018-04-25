@@ -24,10 +24,10 @@ import_vents <- function() {
     `Volcano Number` = col_integer(),
     `Node ID` = col_integer()
   ))
-  # clean_names, see zzz
+  # clean_names, see zzz (replace with janitor?)
   vents <- clean_names(vents)
   vents$download_date <- Sys.Date()
   save(vents, file = "data/vents.rda")
-  save(vents, file = "tests/testthat/vents.rda")
+  save(vents, file = "inst/testdata/vents.rda")
   load("data/vents.rda", envir = globalenv(), verbose = FALSE)
 }

@@ -2,6 +2,7 @@
 
 export("%>%")
 export(clean_names)
+export(get_featurecodes)
 export(import_gebco)
 export(import_vents)
 importFrom(magrittr,"%>%")

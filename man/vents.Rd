@@ -4,7 +4,36 @@
 \name{vents}
 \alias{vents}
 \title{vents}
-\format{A data.frame with 26 variables: \code{name_id}, \code{name_aliases}, \code{mgds_featureid_lowest_in_hierarchy}, \code{vent_sites}, \code{activity}, \code{maximum_temperature}, \code{max_temperature_category}, \code{latitude}, \code{longitude}, \code{ocean}, \code{region}, \code{national_jurisdiction}, \code{maximum_or_single_reported_depth}, \code{minimum_depth}, \code{tectonic_setting}, \code{full_spreading_rate_mma}, \code{host_rock}, \code{deposit_type}, \code{notes_on_vent_field_description}, \code{notes_relevant_to_biology}, \code{year_and_how_discovered_if_active,_visual_confirmation_is_listed_first}, \code{discovery_references_text}, \code{other_references_text}, \code{volcano_number}, \code{node_id}, \code{download_date}}
+\format{{ A data.frame with 26 variables:
+\describe{
+\item{\code{name_id}}{character vector}
+\item{\code{name_aliases}}{character vector}
+\item{\code{mgds_featureid_lowest_in_hierarchy}}{character vector}
+\item{\code{vent_sites}}{character vector}
+\item{\code{activity}}{character vector}
+\item{\code{maximum_temperature}}{integer vector}
+\item{\code{max_temperature_category}}{character vector}
+\item{\code{latitude}}{double}
+\item{\code{longitude}}{double}
+\item{\code{ocean}}{character vector}
+\item{\code{region}}{character vector}
+\item{\code{national_jurisdiction}}{character vector}
+\item{\code{maximum_or_single_reported_depth}}{integer}
+\item{\code{minimum_depth}}{integer}
+\item{\code{tectonic_setting}}{character vector}
+\item{\code{full_spreading_rate_mma}}{double}
+\item{\code{host_rock}}{character vector}
+\item{\code{deposit_type}}{character vector}
+\item{\code{notes_on_vent_field_description}}{character vector}
+\item{\code{notes_relevant_to_biology}}{character vector}
+\item{\code{year_and_how_discovered_if_active,_visual_confirmation_is_listed_first}}{character vector}
+\item{\code{discovery_references_text}}{character vector}
+\item{\code{other_references_text}}{character vector}
+\item{\code{volcano_number}}{integer}
+\item{\code{node_id}}{integer}
+\item{\code{download_date}}{date}
+}
+}}
 \usage{
 vents
 }
@@ -15,6 +44,6 @@ A dataset on global hydrothermal vents from the \href{https://vents-data.interri
 For license details see \file{interridge_citation.txt} in data-raw or \url{https://creativecommons.org/licenses/by-nc-sa/3.0/}.
 }
 \references{
-Please cite the data as: "Beaulieu, S.E., 2015, InterRidge Global Database of Active Submarine Hydrothermal Vent Fields: prepared for InterRidge, Version 3.3. World Wide Web electronic publication. Version 3.X accessed 2017-09-04, http://vents-data.interridge.org"
+Please cite the data as: "Beaulieu, S.E., 2015, InterRidge Global Database of Active Submarine Hydrothermal Vent Fields: prepared for InterRidge, Version 3.3. World Wide Web electronic publication. Version 3.X accessed, insert latest date as YYYY-MM-DD, http://vents-data.interridge.org"
 }
 \keyword{datasets}

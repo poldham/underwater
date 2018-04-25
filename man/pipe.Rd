@@ -4,11 +4,11 @@
 \alias{\%>\%}
 \title{Pipe}
 \arguments{
-\item{lhs, rhs}{pass lhs to rhs and do}
+\item{lhs, rhs}{pass lhs to rhs and do something}
 }
 \description{
-Like dplyr underwater uses the pipe function, \code{\%>\%}. Copied from ggvis pipe.R
+Like dplyr underwater uses the pipe function, \code{\%>\%}.
 }
 \examples{
-\dontrun{mtcars \%>\% select(mpg)}
+\dontrun{vents \%>\% select(name_id)}
 }
