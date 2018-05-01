@@ -15,9 +15,9 @@ Depends:
 Imports: 
       magrittr,
       readr,
-      stringr
+      stringr,
+      dplyr
 Suggests: 
     testthat,
-    tidyr,
-    dplyr
+    tidyr
     

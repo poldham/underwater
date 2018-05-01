@@ -24,6 +24,7 @@ x
 #' @importFrom readr cols
 #' @importFrom readr col_character
 #' @importFrom readr col_integer
+#' @importFrom dplyr mutate
 #' @export
 #' @references Please cite as "IHO-IOC GEBCO Gazetteer of Undersea Feature Names, www.gebco.net"
 #' @examples \dontrun{
@@ -76,7 +77,8 @@ import_gebco <- function(){
 get_featurecodes <- function(){
   # the problem is that testthat cant find the goddam directories where the data is saved to. Bloody hell.
   download.file("http://download.geonames.org/export/dump/featureCodes_en.txt", destfile = "data-raw/featurecodes.txt")
-  featurecodes <- readr::read_tsv("data-raw/featurecodes.txt", col_names = c("feature_code", "feature_name", "feature_description")) %>% tidyr::separate(., feature_code, c("feature_class", "feature_code"), sep = "[.]") %>%
+  featurecodes <- readr::read_tsv("data-raw/featurecodes.txt", col_names = c("feature_code", "feature_name", "feature_description")) %>%
+    tidyr::separate(., feature_code, c("feature_class", "feature_code"), sep = "[.]") %>%
     tidyr::drop_na(., feature_code) # drop last row not available
   save(featurecodes, file = "data/featurecodes.rda", compress = "xz")
   save(featurecodes, file = "inst/testdata/featurecodes.rda", compress = "xz")

@@ -1,6 +1,6 @@
 #' @title Pipe
 #' @description Like dplyr underwater uses the pipe function, \code{\%>\%}.
-#' @importFrom magrittr %>%
+#' @importFrom dplyr %>%
 #' @name %>%
 #' @rdname pipe
 #' @export

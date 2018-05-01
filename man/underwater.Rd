@@ -6,5 +6,5 @@
 \alias{underwater-package}
 \title{\code{underwater} package}
 \description{
-Underwater package
+Underwater
 }
