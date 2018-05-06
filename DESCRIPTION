@@ -2,10 +2,10 @@ Package: underwater
 Type: Package
 Title: Access underwater place names from a range of sources
 Version: 0.1.0
-Author: Paul Oldham
+Authors@R: person("Paul", "Oldham", role = c("aut", "cre"), email = "poldham@mac.com")
 Maintainer: Paul Oldham <poldham@mac.com>
 Description: Access underwater place names and coordinates from the GEBCO Gazeteer, the InterRidge Vents Database, Geonames and more.
-License: Apache License (>= 2.0)
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
