@@ -3,7 +3,7 @@
 #' @details For license details see \file{interridge_citation.txt} in data-raw or \url{https://creativecommons.org/licenses/by-nc-sa/3.0/}.
 #' @references Please cite the data as: "Beaulieu, S.E., 2015, InterRidge Global Database of Active Submarine Hydrothermal Vent Fields: prepared for InterRidge, Version 3.3. World Wide Web electronic publication. Version 3.X accessed, insert latest date as YYYY-MM-DD, http://vents-data.interridge.org"
 #' @format{ A data.frame with 26 variables:
-#'  \describe{
+#' \describe{
 #'  \item{\code{name_id}}{character vector}
 #'  \item{\code{name_aliases}}{character vector}
 #'  \item{\code{mgds_featureid_lowest_in_hierarchy}}{character vector}
