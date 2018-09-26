@@ -2,13 +2,15 @@ Package: underwater
 Type: Package
 Title: Access underwater place names from a range of sources
 Version: 0.1.0
-Authors@R: person("Paul", "Oldham", role = c("aut", "cre"), email = "poldham@mac.com")
+Authors@R: person("Paul", "Oldham", role = c("aut", "cre"), email = "poldham@mac.com", comment = c(ORCID="0000-0002-1013-4390"))
 Maintainer: Paul Oldham <poldham@mac.com>
 Description: Access underwater place names and coordinates from the GEBCO Gazeteer, the InterRidge Vents Database, Geonames and more.
+BugReports: https://github.com/poldham/underwater/issues
+URL: https://github.com/poldham/underwater
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
 Roxygen: list(markdown = TRUE)
 Depends:
     R (>= 2.10)
@@ -20,4 +22,3 @@ Imports:
 Suggests: 
     testthat,
     tidyr
-    

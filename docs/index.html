@@ -8,8 +8,8 @@
 <title>Access underwater place names from a range of sources • underwater</title>
 <!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><meta property="og:title" content="Access underwater place names from a range of sources">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<script src="pkgdown.js"></script><meta property="og:title" content="Access underwater place names from a range of sources">
 <meta property="og:description" content="Access underwater place names and coordinates from the GEBCO Gazeteer, the InterRidge Vents Database, Geonames and more.">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
@@ -45,7 +45,14 @@
   <a href="reference/index.html">Reference</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="https://github.com/poldham/underwater">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
 <!--/.nav-collapse -->
   </div>
@@ -62,7 +69,7 @@
     
 <p><a href="http://www.repostatus.org/#wip"><img src="http://www.repostatus.org/badges/latest/wip.svg" alt="Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public."></a> <a href="https://travis-ci.org/poldham/underwater"><img src="https://travis-ci.org/poldham/underwater.svg?branch=master" alt="Build Status"></a> <a href="https://codecov.io/gh/poldham/underwater"><img src="https://codecov.io/gh/poldham/underwater/branch/master/graph/badge.svg" alt="codecov"></a> <a href="https://cran.r-project.org/package=underwater"><img src="http://www.r-pkg.org/badges/version/underwater" alt="CRAN_Status_Badge"></a> <a href="commits/master"><img src="https://img.shields.io/badge/Package%20version-0.1.0-orange.svg?style=flat-square" alt="packageversion"></a> “<a href="https://cran.r-project.org/"><img src="https://img.shields.io/badge/R%3E%3D-3.0.3-6666ff.svg" alt="minimal R version"></a>”</p>
 <p>The <code>underwater</code> R data package brings together datasets for submerged geographic features and place names that are presently dispersed. The aim of the package is to facilitate mapping and text mining of scientific and other literature for underwater features and place names using a tidy approach.</p>
-<p>The package aims to assist researchers seeking to contribute to the evidence base for negotiations of a new international treaty on marine biodiversity in Areas Beyond National Jurisdiction (ABNJ) under the United Nations General Assembly. The package was written as part of the BIOSPOLAR project funded by the Norwegian Research Council which aims to map research and innovation in polar marine areas and additional funding from the World Intellectual Property Organization, courtesy of financial support from the Japan Patent Office, as part of a project on the scientific and patent landscape for marine genetic resources in the South East Asia (ASEAN) region. The views expressed in this package are the strictly the author’s own and should not be attributed to the Norweigan Research Council, the World Intellectual Property Organization or the Japan Patent Office.</p>
+<p>The package aims to assist researchers seeking to contribute to the evidence base for negotiations of a new international treaty on marine biodiversity in Areas Beyond National Jurisdiction (ABNJ) under the United Nations General Assembly. The package was written as part of the BIOSPOLAR project funded by the Norwegian Research Council (RCN 257631/E10) which aims to map research and innovation in polar marine areas. The views expressed in this package are the strictly the author’s own and should not be attributed to the Norweigan Research Council.</p>
 <p>The package provides open access datasets for named underwater places from:</p>
 <ol style="list-style-type: decimal">
 <li>The <a href="https://www.gebco.net/data_and_products/undersea_feature_names/">GEBCO Gazeteer</a> with 4,084 place and feature names.</li>
@@ -73,8 +80,8 @@
 <h3 class="hasAnchor">
 <a href="#installing" class="anchor"></a>Installing</h3>
 <p><code>underwater</code> is not on CRAN and can be installed with devtools</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">installed.packages</span>(<span class="st">"devtools"</span>)
-devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"poldham/underwater"</span>)</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">installed.packages</span>(<span class="st">"devtools"</span>)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"poldham/underwater"</span>)</a></code></pre></div>
 </div>
 <div id="the-datasets" class="section level3">
 <h3 class="hasAnchor">
@@ -83,15 +90,15 @@ devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocument
 <ol style="list-style-type: decimal">
 <li>The GEBCO Gazeteer is rarely updated. The package archives a version of the dataset from 2017-12-29 and can be called using <code><a href="reference/gebco.html">underwater::gebco</a></code> or data(“gebco”).</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gebco &lt;-<span class="st"> </span>underwater<span class="op">::</span>gebco</code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">gebco &lt;-<span class="st"> </span>underwater<span class="op">::</span>gebco</a></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>The Interridge Hydrothermal vents database is updated infrequently. An archived version can be accessed using <code><a href="reference/vents.html">underwater::vents</a></code> or data(“vents”). To import an updated version use <code><a href="reference/import_vents.html">import_vents()</a></code>.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">vents &lt;-<span class="st"> </span>underwater<span class="op">::</span>vents</code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">vents &lt;-<span class="st"> </span>underwater<span class="op">::</span>vents</a></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>The Geonames <code>undersea</code> data is taken from the Geonames <code>allCountries.txt</code> file <a href="http://download.geonames.org/export/dump/">data export dump</a> and filtered on code U for Undersea (undersea). The geonames export files are updated daily. A reference set from 2018-01-01 is provided with the package. The geonames data can be accessed using <code><a href="reference/undersea.html">underwater::undersea</a></code> or data(“undersea”).</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">undersea &lt;-<span class="st"> </span>underwater<span class="op">::</span>undersea</code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">undersea &lt;-<span class="st"> </span>underwater<span class="op">::</span>undersea</a></code></pre></div>
 <p>The raw data is not provided in a form that makes text mining easy. The data is not tidy and may contain punctuation or concatenation of names. Alternate names may also be provided.</p>
 <p>Note that geographic lat long coordinates are provided in the vents and the geonames dataset. GEBCO data includes Point, Linestring and Polygons.</p>
 <p>If you know of an open access dataset that could be added to aid in underwater mapping projects please raise an issue or make a pull request. Here are some of the other packages I have found so far.</p>
@@ -126,7 +133,9 @@ devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocument
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
-<li>Report a bug at <br><a href="NA">NA</a>
+<li>Browse source code at <br><a href="https://github.com/poldham/underwater">https://​github.com/​poldham/​underwater</a>
+</li>
+<li>Report a bug at <br><a href="https://github.com/poldham/underwater/issues">https://​github.com/​poldham/​underwater/​issues</a>
 </li>
 </ul>
 </div>
@@ -140,7 +149,7 @@ devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocument
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Paul Oldham <br><small class="roles"> Author, maintainer </small>  </li>
+<li>Paul Oldham <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-1013-4390" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" height="16"></a> </li>
 </ul>
 </div>
 
