@@ -1,18 +1,10 @@
----
-title: "README"
-author: "Paul Oldham"
-date: "08/01/2018"
-output: html_document
----
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
 [![Build Status](https://travis-ci.org/poldham/underwater.svg?branch=master)](https://travis-ci.org/poldham/underwater)
 [![codecov](https://codecov.io/gh/poldham/underwater/branch/master/graph/badge.svg)](https://codecov.io/gh/poldham/underwater)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/underwater)](https://cran.r-project.org/package=underwater)
 [![packageversion](https://img.shields.io/badge/Package%20version-0.1.0-orange.svg?style=flat-square)](commits/master)
 "[![minimal R version](https://img.shields.io/badge/R%3E%3D-3.0.3-6666ff.svg)](https://cran.r-project.org/)"
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+[![DOI](https://zenodo.org/badge/120892550.svg)](https://zenodo.org/badge/latestdoi/120892550)
 
 The `underwater` R data package brings together datasets for submerged geographic features and place names that are presently dispersed. The aim of the package is to facilitate mapping and text mining of scientific and other literature for underwater features and place names using a tidy approach. 
 
@@ -28,8 +20,8 @@ The package provides open access datasets for named underwater places from:
 
 `underwater` is not on CRAN and can be installed with devtools
 
-```{r eval=FALSE}
-installed.packages("devtools")
+```{r}
+install.packages("devtools")
 devtools::install_github("poldham/underwater")
 ```
 
