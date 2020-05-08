@@ -3,7 +3,6 @@
 \docType{package}
 \name{underwater}
 \alias{underwater}
-\alias{underwater-package}
 \title{\code{underwater} package}
 \description{
 Underwater
