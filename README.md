@@ -1,4 +1,4 @@
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://travis-ci.org/poldham/underwater.svg?branch=master)](https://travis-ci.org/poldham/underwater)
 [![codecov](https://codecov.io/gh/poldham/underwater/branch/master/graph/badge.svg)](https://codecov.io/gh/poldham/underwater)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/underwater)](https://cran.r-project.org/package=underwater)
