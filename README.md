@@ -8,13 +8,22 @@
 
 The `underwater` R data package brings together datasets for submerged geographic features and place names that are presently dispersed. The aim of the package is to facilitate mapping and text mining of scientific and other literature for underwater features and place names using a tidy approach. 
 
-The package aims to assist researchers seeking to contribute to the evidence base for negotiations of a new international treaty on marine biodiversity in Areas Beyond National Jurisdiction (ABNJ) under the United Nations General Assembly. The package was written as part of the BIOSPOLAR project funded by the Norwegian Research Council (RCN 257631/E10) which aims to map research and innovation in polar marine areas. The views expressed in this package are the strictly the author's own and should not be attributed to the Norweigan Research Council. 
+The package aims to assist researchers seeking to contribute to the evidence base for negotiations of a new international treaty on marine biodiversity in Areas Beyond National Jurisdiction (ABNJ) under the United Nations General Assembly. 
 
 The package provides open access datasets for named underwater places from:
 
 1. The [GEBCO Gazeteer](https://www.gebco.net/data_and_products/undersea_feature_names/) with 4,084 place and feature names.
 2. The [Interridge Hydrothermal Vents Database](https://vents-data.interridge.org/) with 700 hydrothermal vents.
 3. Underwater features from the [Geonames database](http://www.geonames.org/export/) coded U for Undersea. This dataset contains 14,513 underwater place names.
+4. Named seamounts from Seamounts Online [http://seamounts.sdsc.edu/](http://seamounts.sdsc.edu/)
+
+### Funding 
+
+The first version of the underwater package was written as part of the BIOSPOLAR project funded by the Norwegian Research Council (RCN 257631/E10) which aimed to map research and innovation in polar marine areas. The second edition of the package was written as part of the European Commission funded 'Study on Marine Genetic Resources Market Value and State of the Art of Commercialisation of Related Products in the Context of the BBNJ Negotiations'. The views expressed in the package are strictly the authors own and should not be attributed to the Norwegian Research Council or the European Commission. 
+
+The package is made available under the MIT Licence (CHANGE TO CC-BY)
+
+ADD SUGGESTED CITATION
 
 ### Installing
 
@@ -29,13 +38,13 @@ devtools::install_github("poldham/underwater")
 
 The datasets have different update schedules and an archive of each dataset is provided in `/data` and can be called with the package. 
 
-1. The GEBCO Gazeteer is rarely updated. The package archives a version of the dataset from 2017-12-29 and can be called using `underwater::gebco` or data("gebco").
+1. The GEBCO Gazeteer is rarely updated. The package archives a version of the dataset from 2023-07-17 and can be called using `underwater::gebco` or data("gebco").
 
 ```{r}
 gebco <- underwater::gebco
 ```
 
-2. The Interridge Hydrothermal vents database is updated infrequently. An archived version can be accessed using `underwater::vents` or data("vents"). To import an updated version use `import_vents()`.
+2. The Interridge Hydrothermal vents database is updated infrequently. An archived version can be accessed using `underwater::vents` or data("vents"). 
 
 ```{r}
 vents <- underwater::vents
@@ -46,13 +55,19 @@ vents <- underwater::vents
 ```{r}
 undersea <- underwater::undersea
 ```
-
-
 The raw data is not provided in a form that makes text mining easy. The data is not tidy and may contain punctuation or concatenation of names. Alternate names may also be provided. 
 
 Note that geographic lat long coordinates are provided in the vents and the geonames dataset. GEBCO data includes Point, Linestring and Polygons. 
 
 If you know of an open access dataset that could be added to aid in underwater mapping projects please raise an issue or make a pull request. Here are some of the other packages I have found so far. 
+
+4. Seamounts
+
+Seamounts data is from seamounts online at [http://seamounts.sdsc.edu/](http://seamounts.sdsc.edu/) which is discontinued due to lack of funding). A set of zip files are provided and stored in `data-raw` as is. The Seamounts Online dataset was coordinated by Karen Stocks at the Scripps Institution of Oceanography and we are grateful to her and contributing colleagues for this valuable resource.
+
+```{r}
+seamounts <- underwater::seamounts
+```
 
 ### Other R packages dealing with Ocean data
 
